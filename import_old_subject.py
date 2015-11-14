@@ -14,7 +14,7 @@ def load_lib():
     libs=[]
     db = MySQLdb.connect("192.168.56.110","root","mysql@cs2003","db_webexam")
     cursor = db.cursor()
-    cursor.execute("select * from subjectlib where libcreatedate>='2013-9-1' order by libcreatedate desc")
+    cursor.execute("select * from subjectlib where id='98e8e895-1d79-4f34-8dfd-ee60a5b4ca10' order by libcreatedate desc")
     for x in cursor:
         libname = x[2].decode('utf-8')
         lib = Lib(libname=libname)
@@ -127,4 +127,4 @@ def main():
     print "Done...Total:%s"%total
 
 if __name__ == '__main__':
-    main()
+    #main()
