@@ -10,7 +10,12 @@
 + Flask-SQLAlchemy 
 + xlrd
  
- (安装了python后，使用pip安装：pip install flask flask-login flask-sqlalchemy xlrd)
+		在线安装：
+		安装了python后，使用pip安装：
+		pip install flask flask-login flask-sqlalchemy xlrd
+		
+		离线安装：
+		在windows下可以使用离线包安装，运行 lib_offline_setup/setup_windows.cmd批处理。
 
 ### 2.使用
 
